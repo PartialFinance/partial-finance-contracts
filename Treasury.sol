@@ -21,8 +21,7 @@ contract Treasury is ContractGuard, ReentrancyGuard {
 
     /* ========= CONSTANT VARIABLES ======== */
 
-    // uint256 public constant PERIOD = 6 hours;
-    uint256 public constant PERIOD = 10 minutes;
+    uint256 public constant PERIOD = 6 hours;
 
     /* ========== STATE VARIABLES ========== */
 
@@ -263,8 +262,7 @@ contract Treasury is ContractGuard, ReentrancyGuard {
         premiumPercent = 7000;
 
         // First 28 epochs with 4.5% expansion
-        // bootstrapEpochs = 28;
-        bootstrapEpochs = 0;
+        bootstrapEpochs = 28;
         bootstrapSupplyExpansionPercent = 450;
 
         // set seigniorageSaved to it's balance
