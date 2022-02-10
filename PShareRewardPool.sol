@@ -48,9 +48,9 @@ contract PShareRewardPool is ReentrancyGuard{
     // The time when pSHARE mining ends.
     uint256 public poolEndTime;
 
-    uint256 public constant pSharePerSecond = 0.0014358108108108 ether; // 45900 pshare / (370 days * 24h * 60min * 60s)
+    uint256 public constant pSharePerSecond = 0.0014295545545546 ether; // 45700 pshare / (370 days * 24h * 60min * 60s)
     uint256 public constant runningTime = 370 days; // 370 days
-    uint256 public constant TOTAL_REWARDS = 45900 ether;
+    uint256 public constant TOTAL_REWARDS = 45700 ether;
 
     event Deposit(address indexed user, uint256 indexed pid, uint256 amount);
     event Withdraw(address indexed user, uint256 indexed pid, uint256 amount);

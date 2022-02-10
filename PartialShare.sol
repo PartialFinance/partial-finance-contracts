@@ -11,7 +11,7 @@ contract PartialShare is ERC20Burnable, Operator {
     using SafeMath for uint256;
 
     // TOTAL MAX SUPPLY = 55,000 PSHAREs
-    uint256 public constant FARMING_POOL_REWARD_ALLOCATION = 45900 ether;
+    uint256 public constant FARMING_POOL_REWARD_ALLOCATION = 45700 ether;
     uint256 public constant COMMUNITY_FUND_POOL_ALLOCATION = 4500 ether;
     uint256 public constant DEV_FUND_POOL_ALLOCATION = 4500 ether;
 
@@ -31,7 +31,7 @@ contract PartialShare is ERC20Burnable, Operator {
     bool public rewardPoolDistributed = false;
 
     constructor(uint256 _startTime, address _communityFund, address _devFund) public ERC20("Partial Share", "PSHARE") {
-        _mint(msg.sender, 100 ether); // mint 100 Partial Share for initial pools deployment
+        _mint(msg.sender, 300 ether); // mint 300 Partial Share for initial pools deployment
 
         startTime = _startTime;
         endTime = startTime + VESTING_DURATION;

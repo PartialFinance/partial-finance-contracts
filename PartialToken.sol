@@ -58,13 +58,13 @@ contract Partial is ERC20Burnable, Operator {
      * @notice Constructs the PARTIAL ERC-20 contract.
      */
     constructor(uint256 _taxRate, address _taxCollectorAddress) public ERC20("Partial Token", "PARTIAL") {
-        // Mints 100,000 PARTIAL to contract creator for initial pool setup & LP
-        require(_taxRate < 100000, "tax equal or bigger to 100%");
+        // Mints 75,000 PARTIAL to contract creator for initial pool setup & LP
+        require(_taxRate < 10000, "tax equal or bigger to 100%");
         require(_taxCollectorAddress != address(0), "tax collector address must be non-zero address");
 
         excludeAddress(address(this));
 
-        _mint(msg.sender, 100000 ether);
+        _mint(msg.sender, 75000 ether);
         taxRate = _taxRate;
         taxCollectorAddress = _taxCollectorAddress;
     }
