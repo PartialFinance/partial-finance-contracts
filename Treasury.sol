@@ -38,7 +38,7 @@ contract Treasury is ContractGuard, ReentrancyGuard {
 
     // exclusions from total supply
     address[] public excludedFromTotalSupply = [
-        address(0x70f06eE97717C28d29F10DCB562C34EDe28c2b05) // PartialRewardPool
+        address(0x62f1Fa129649A341b210dA6806096ceF5F912E0c) // PartialRewardPool
     ];
 
     // core components
